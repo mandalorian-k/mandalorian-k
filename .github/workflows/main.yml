@@ -9,7 +9,8 @@ jobs:
     name: Experiment
     runs-on: ubuntu-latest
     steps:
-      - uses: avinal/experiment@main
+      - uses: avinal/Profile-Readme-WakaTime@add-dark
         with:
           # Automatic github token
           GITHUB_TOKEN: ${{ github.token }}
+          WAKATIME_API_KEY: ${{ secrets.WAKATIME_API_KEY }}
